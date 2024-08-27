@@ -1,0 +1,3425 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="title" content="Kur'an - rijec po rijec" />
+    <title>Kur'an - rijec po rijec</title>
+    <meta
+      name="description"
+      content="Prijevod Kur'ana rijec po rijec. 114 Kur'anskih sura prevedenih rijec po rijec."
+    />
+    <meta
+      name="keywords"
+      content="Kur'an, quran, translation, quran translation, prevod Kur'ana, prevod kurana"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="//unpkg.com/alpinejs" defer></script>
+  </head>
+  <body>
+    c
+    <nav x-data="{ isOpen: false }" class="fixed top-0 w-full bg-white shadow">
+      <div class="container px-6 py-4 mx-auto">
+        <div class="lg:flex lg:items-center lg:justify-center">
+          <div class="flex items-center justify-center">
+            <!-- Mobile menu button -->
+            <div class="flex lg:hidden">
+              <button
+                x-cloak
+                @click="isOpen = !isOpen"
+                type="button"
+                class="text-gray-500 hover:text-gray-600 focus:outline-none focus:text-gray-600 dark:focus:text-gray-400"
+                aria-label="toggle menu"
+              >
+                <svg
+                  x-show="!isOpen"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-6 h-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M4 8h16M4 16h16"
+                  />
+                </svg>
+
+                <svg
+                  x-show="isOpen"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-6 h-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
+          <div
+            x-cloak
+            :class="[isOpen ? 'translate-x-0 opacity-100 ' : 'opacity-0 -translate-x-full']"
+            class="absolute inset-x-0 z-20 w-full px-6 py-4 transition-all duration-300 ease-in-out bg-white lg:mt-0 lg:p-0 lg:top-0 lg:relative lg:bg-transparent lg:w-auto lg:opacity-100 lg:translate-x-0 lg:flex lg:items-center"
+          >
+            <div
+              class="flex flex-col -mx-6 lg:flex-row lg:items-center lg:mx-8"
+            >
+              <a
+                href="index.html"
+                class="px-3 py-2 mx-3 mt-2 text-gray-700 transition-colors duration-300 transform rounded-md lg:mt-0 hover:bg-gray-100"
+                >Pocetna</a
+              >
+              <a
+                href="quran.html"
+                class="px-3 py-2 mx-3 mt-2 text-gray-700 transition-colors duration-300 transform rounded-md lg:mt-0 bg-gray-100"
+                >Prijevod</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section class="w-3/4 sm:w-1/2 mx-auto my-24 bg-white">
+      <div class="space-y-4">
+        <!-- <details class="group [&_summary::-webkit-details-marker]:hidden">
+          <summary
+            class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+          >
+            <h2 class="font-medium">1. Fatiha</h2>
+
+            <svg
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </summary>
+
+          <p class="mt-4 px-4 flex items-center justify-center">
+            <embed class="pdf" src="sample.pdf" width="800" height="500" />
+          </p>
+        </details>
+
+        <details class="group [&_summary::-webkit-details-marker]:hidden">
+          <summary
+            class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+          >
+            <h2 class="font-medium">2. El-Bekare</h2>
+
+            <svg
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </summary>
+
+          <p
+            class="mt-4 px-4 leading-relaxed text-gray-700 flex items-center justify-center"
+          >
+            <embed class="pdf" src="sample.pdf" width="800" height="500" />
+          </p>
+        </details>
+
+        <details class="group [&_summary::-webkit-details-marker]:hidden">
+          <summary
+            class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+          >
+            <h2 class="font-medium">3. Ali Imran</h2>
+
+            <svg
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </summary>
+
+          <p
+            class="mt-4 px-4 leading-relaxed text-gray-700 flex items-center justify-center"
+          >
+            <embed class="pdf" src="sample.pdf" width="800" height="500" />
+          </p>
+        </details>
+
+        <details class="group [&_summary::-webkit-details-marker]:hidden">
+          <summary
+            class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+          >
+            <h2 class="font-medium">4. En-Nisa</h2>
+
+            <svg
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </summary>
+
+          <p
+            class="mt-4 px-4 leading-relaxed text-gray-700 flex items-center justify-center"
+          >
+            <embed class="pdf" src="sample.pdf" width="800" height="500" />
+          </p>
+        </details>
+
+        <details class="group [&_summary::-webkit-details-marker]:hidden">
+          <summary
+            class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+          >
+            <h2 class="font-medium">5. El-Maide</h2>
+
+            <svg
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </summary>
+
+          <p
+            class="mt-4 px-4 leading-relaxed text-gray-700 flex items-center justify-center"
+          >
+            <embed class="pdf" src="sample.pdf" width="800" height="500" />
+          </p>
+        </details>
+
+        <details class="group [&_summary::-webkit-details-marker]:hidden">
+          <summary
+            class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+          >
+            <h2 class="font-medium">6. El-En'am</h2>
+
+            <svg
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </summary>
+
+          <p
+            class="mt-4 px-4 leading-relaxed text-gray-700 flex items-center justify-center"
+          >
+            <embed class="pdf" src="sample.pdf" width="800" height="500" />
+          </p>
+        </details>
+
+        <details class="group [&_summary::-webkit-details-marker]:hidden">
+          <summary
+            class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+          >
+            <h2 class="font-medium">7. El-Earaf</h2>
+
+            <svg
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </summary>
+
+          <p
+            class="mt-4 px-4 leading-relaxed text-gray-700 flex items-center justify-center"
+          >
+            <embed class="pdf" src="sample.pdf" width="800" height="500" />
+          </p>
+        </details>
+
+        <details class="group [&_summary::-webkit-details-marker]:hidden">
+          <summary
+            class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+          >
+            <h2 class="font-medium">8. El-Enfal</h2>
+
+            <svg
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </summary>
+
+          <p
+            class="mt-4 px-4 leading-relaxed text-gray-700 flex items-center justify-center"
+          >
+            <embed class="pdf" src="sample.pdf" width="800" height="500" />
+          </p>
+        </details>
+
+        <details class="group [&_summary::-webkit-details-marker]:hidden">
+          <summary
+            class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+          >
+            <h2 class="font-medium">9. Et-Tevba</h2>
+
+            <svg
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </summary>
+
+          <p
+            class="mt-4 px-4 leading-relaxed text-gray-700 flex items-center justify-center"
+          >
+            <embed class="pdf" src="sample.pdf" width="800" height="500" />
+          </p>
+        </details>
+
+        <details class="group [&_summary::-webkit-details-marker]:hidden">
+          <summary
+            class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+          >
+            <h2 class="font-medium">10. Junus</h2>
+
+            <svg
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </summary>
+
+          <p
+            class="mt-4 px-4 leading-relaxed text-gray-700 flex items-center justify-center"
+          >
+            <embed class="pdf" src="sample.pdf" width="800" height="500" />
+          </p>
+        </details>
+
+        <details class="group [&_summary::-webkit-details-marker]:hidden">
+          <summary
+            class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+          >
+            <h2 class="font-medium">11. Hud</h2>
+
+            <svg
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </summary>
+
+          <p
+            class="mt-4 px-4 leading-relaxed text-gray-700 flex items-center justify-center"
+          >
+            <embed class="pdf" src="sample.pdf" width="800" height="500" />
+          </p>
+        </details>
+
+        <details class="group [&_summary::-webkit-details-marker]:hidden">
+          <summary
+            class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+          >
+            <h2 class="font-medium">12. Jusuf</h2>
+
+            <svg
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </summary>
+
+          <p
+            class="mt-4 px-4 leading-relaxed text-gray-700 flex items-center justify-center"
+          >
+            <embed class="pdf" src="sample.pdf" width="800" height="500" />
+          </p>
+        </details>
+
+        <details class="group [&_summary::-webkit-details-marker]:hidden">
+          <summary
+            class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+          >
+            <h2 class="font-medium">13. Er-Ra'd</h2>
+
+            <svg
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </summary>
+
+          <p
+            class="mt-4 px-4 leading-relaxed text-gray-700 flex items-center justify-center"
+          >
+            <embed class="pdf" src="sample.pdf" width="800" height="500" />
+          </p>
+        </details>
+
+        <details class="group [&_summary::-webkit-details-marker]:hidden">
+          <summary
+            class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+          >
+            <h2 class="font-medium">14. Ibrahim</h2>
+
+            <svg
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </summary>
+
+          <p
+            class="mt-4 px-4 leading-relaxed text-gray-700 flex items-center justify-center"
+          >
+            <embed class="pdf" src="sample.pdf" width="800" height="500" />
+          </p>
+        </details>
+
+        <details class="group [&_summary::-webkit-details-marker]:hidden">
+          <summary
+            class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+          >
+            <h2 class="font-medium">15. El-Hidzr</h2>
+
+            <svg
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </summary>
+
+          <p
+            class="mt-4 px-4 leading-relaxed text-gray-700 flex items-center justify-center"
+          >
+            <embed class="pdf" src="sample.pdf" width="800" height="500" />
+          </p>
+        </details>
+
+        <details class="group [&_summary::-webkit-details-marker]:hidden">
+          <summary
+            class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+          >
+            <h2 class="font-medium">16. En-Nahl</h2>
+
+            <svg
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </summary>
+
+          <p
+            class="mt-4 px-4 leading-relaxed text-gray-700 flex items-center justify-center"
+          >
+            <embed class="pdf" src="sample.pdf" width="800" height="500" />
+          </p>
+        </details>
+
+        <details class="group [&_summary::-webkit-details-marker]:hidden">
+          <summary
+            class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+          >
+            <h2 class="font-medium">17. El-Isra</h2>
+
+            <svg
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </summary>
+
+          <p
+            class="mt-4 px-4 leading-relaxed text-gray-700 flex items-center justify-center"
+          >
+            <embed class="pdf" src="sample.pdf" width="800" height="500" />
+          </p>
+        </details>
+
+        <details class="group [&_summary::-webkit-details-marker]:hidden">
+          <summary
+            class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+          >
+            <h2 class="font-medium">18. El-Kehf</h2>
+
+            <svg
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </summary>
+
+          <p
+            class="mt-4 px-4 leading-relaxed text-gray-700 flex items-center justify-center"
+          >
+            <embed class="pdf" src="sample.pdf" width="800" height="500" />
+          </p>
+        </details>
+
+        <details class="group [&_summary::-webkit-details-marker]:hidden">
+          <summary
+            class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+          >
+            <h2 class="font-medium">19. Merjem</h2>
+
+            <svg
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </summary>
+
+          <p
+            class="mt-4 px-4 leading-relaxed text-gray-700 flex items-center justify-center"
+          >
+            <embed class="pdf" src="sample.pdf" width="800" height="500" />
+          </p>
+        </details>
+
+        <details class="group [&_summary::-webkit-details-marker]:hidden">
+          <summary
+            class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+          >
+            <h2 class="font-medium">20. Ta-Ha</h2>
+
+            <svg
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </summary>
+
+          <p
+            class="mt-4 px-4 leading-relaxed text-gray-700 flex items-center justify-center"
+          >
+            <embed class="pdf" src="sample.pdf" width="800" height="500" />
+          </p>
+        </details>
+
+        <details class="group [&_summary::-webkit-details-marker]:hidden">
+          <summary
+            class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+          >
+            <h2 class="font-medium">21. El-Enbija</h2>
+
+            <svg
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </summary>
+
+          <p
+            class="mt-4 px-4 leading-relaxed text-gray-700 flex items-center justify-center"
+          >
+            <embed class="pdf" src="sample.pdf" width="800" height="500" />
+          </p>
+        </details>
+
+        <details class="group [&_summary::-webkit-details-marker]:hidden">
+          <summary
+            class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+          >
+            <h2 class="font-medium">22. El-Hadzdz</h2>
+
+            <svg
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </summary>
+
+          <p
+            class="mt-4 px-4 leading-relaxed text-gray-700 flex items-center justify-center"
+          >
+            <embed class="pdf" src="sample.pdf" width="800" height="500" />
+          </p>
+        </details>
+
+        <details class="group [&_summary::-webkit-details-marker]:hidden">
+          <summary
+            class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+          >
+            <h2 class="font-medium">23. El-Mu'minun</h2>
+
+            <svg
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </summary>
+
+          <p
+            class="mt-4 px-4 leading-relaxed text-gray-700 flex items-center justify-center"
+          >
+            <embed class="pdf" src="sample.pdf" width="800" height="500" />
+          </p>
+        </details>
+
+        <details class="group [&_summary::-webkit-details-marker]:hidden">
+          <summary
+            class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+          >
+            <h2 class="font-medium">24. En-Nur</h2>
+
+            <svg
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </summary>
+
+          <p
+            class="mt-4 px-4 leading-relaxed text-gray-700 flex items-center justify-center"
+          >
+            <embed class="pdf" src="sample.pdf" width="800" height="500" />
+          </p>
+        </details>
+
+        <details class="group [&_summary::-webkit-details-marker]:hidden">
+          <summary
+            class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+          >
+            <h2 class="font-medium">25. El-Furkan</h2>
+
+            <svg
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </summary>
+
+          <p
+            class="mt-4 px-4 leading-relaxed text-gray-700 flex items-center justify-center"
+          >
+            <embed class="pdf" src="sample.pdf" width="800" height="500" />
+          </p>
+        </details>
+
+        <details class="group [&_summary::-webkit-details-marker]:hidden">
+          <summary
+            class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+          >
+            <h2 class="font-medium">26. Es-Su'ara</h2>
+
+            <svg
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </summary>
+
+          <p
+            class="mt-4 px-4 leading-relaxed text-gray-700 flex items-center justify-center"
+          >
+            <embed class="pdf" src="sample.pdf" width="800" height="500" />
+          </p>
+        </details>
+
+        <details class="group [&_summary::-webkit-details-marker]:hidden">
+          <summary
+            class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+          >
+            <h2 class="font-medium">27. En-Neml</h2>
+
+            <svg
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </summary>
+
+          <p
+            class="mt-4 px-4 leading-relaxed text-gray-700 flex items-center justify-center"
+          >
+            <embed class="pdf" src="sample.pdf" width="800" height="500" />
+          </p>
+        </details>
+
+        <details class="group [&_summary::-webkit-details-marker]:hidden">
+          <summary
+            class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+          >
+            <h2 class="font-medium">28. El-Kasas</h2>
+
+            <svg
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </summary>
+
+          <p
+            class="mt-4 px-4 leading-relaxed text-gray-700 flex items-center justify-center"
+          >
+            <embed class="pdf" src="sample.pdf" width="800" height="500" />
+          </p>
+        </details>
+
+        <details class="group [&_summary::-webkit-details-marker]:hidden">
+          <summary
+            class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+          >
+            <h2 class="font-medium">29. El-Ankebut</h2>
+
+            <svg
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </summary>
+
+          <p
+            class="mt-4 px-4 leading-relaxed text-gray-700 flex items-center justify-center"
+          >
+            <embed class="pdf" src="sample.pdf" width="800" height="500" />
+          </p>
+        </details>
+
+        <details class="group [&_summary::-webkit-details-marker]:hidden">
+          <summary
+            class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+          >
+            <h2 class="font-medium">30. Er-Rum</h2>
+
+            <svg
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </summary>
+
+          <p
+            class="mt-4 px-4 leading-relaxed text-gray-700 flex items-center justify-center"
+          >
+            <embed class="pdf" src="sample.pdf" width="800" height="500" />
+          </p>
+        </details>
+
+        <details class="group [&_summary::-webkit-details-marker]:hidden">
+          <summary
+            class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+          >
+            <h2 class="font-medium">31. Lukman</h2>
+
+            <svg
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </summary>
+
+          <p
+            class="mt-4 px-4 leading-relaxed text-gray-700 flex items-center justify-center"
+          >
+            <embed class="pdf" src="sample.pdf" width="800" height="500" />
+          </p>
+        </details>
+
+        <details class="group [&_summary::-webkit-details-marker]:hidden">
+          <summary
+            class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+          >
+            <h2 class="font-medium">32. Es-Sedzda</h2>
+
+            <svg
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </summary>
+
+          <p
+            class="mt-4 px-4 leading-relaxed text-gray-700 flex items-center justify-center"
+          >
+            <embed class="pdf" src="sample.pdf" width="800" height="500" />
+          </p>
+        </details>
+
+        <details class="group [&_summary::-webkit-details-marker]:hidden">
+          <summary
+            class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+          >
+            <h2 class="font-medium">33. El-Ahzab</h2>
+
+            <svg
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </summary>
+
+          <p
+            class="mt-4 px-4 leading-relaxed text-gray-700 flex items-center justify-center"
+          >
+            <embed class="pdf" src="sample.pdf" width="800" height="500" />
+          </p>
+        </details>
+
+        <details class="group [&_summary::-webkit-details-marker]:hidden">
+          <summary
+            class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+          >
+            <h2 class="font-medium">34. Saba</h2>
+
+            <svg
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </summary>
+
+          <p
+            class="mt-4 px-4 leading-relaxed text-gray-700 flex items-center justify-center"
+          >
+            <embed class="pdf" src="sample.pdf" width="800" height="500" />
+          </p>
+        </details>
+
+        <details class="group [&_summary::-webkit-details-marker]:hidden">
+          <summary
+            class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+          >
+            <h2 class="font-medium">35. Fatir</h2>
+
+            <svg
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </summary>
+
+          <p
+            class="mt-4 px-4 leading-relaxed text-gray-700 flex items-center justify-center"
+          >
+            <embed class="pdf" src="sample.pdf" width="800" height="500" />
+          </p>
+        </details>
+
+        <details class="group [&_summary::-webkit-details-marker]:hidden">
+          <summary
+            class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+          >
+            <h2 class="font-medium">36. Ja-Sin</h2>
+
+            <svg
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </summary>
+
+          <p
+            class="mt-4 px-4 leading-relaxed text-gray-700 flex items-center justify-center"
+          >
+            <embed class="pdf" src="sample.pdf" width="800" height="500" />
+          </p>
+        </details>
+
+        <details class="group [&_summary::-webkit-details-marker]:hidden">
+          <summary
+            class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+          >
+            <h2 class="font-medium">37. Es-Saffat</h2>
+
+            <svg
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </summary>
+
+          <p
+            class="mt-4 px-4 leading-relaxed text-gray-700 flex items-center justify-center"
+          >
+            <embed class="pdf" src="sample.pdf" width="800" height="500" />
+          </p>
+        </details>
+
+        <details class="group [&_summary::-webkit-details-marker]:hidden">
+          <summary
+            class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+          >
+            <h2 class="font-medium">38. Sad</h2>
+
+            <svg
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </summary>
+
+          <p
+            class="mt-4 px-4 leading-relaxed text-gray-700 flex items-center justify-center"
+          >
+            <embed class="pdf" src="sample.pdf" width="800" height="500" />
+          </p>
+        </details>
+
+        <details class="group [&_summary::-webkit-details-marker]:hidden">
+          <summary
+            class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+          >
+            <h2 class="font-medium">39. Ez-Zumar</h2>
+
+            <svg
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </summary>
+
+          <p
+            class="mt-4 px-4 leading-relaxed text-gray-700 flex items-center justify-center"
+          >
+            <embed class="pdf" src="sample.pdf" width="800" height="500" />
+          </p>
+        </details>
+
+        <details class="group [&_summary::-webkit-details-marker]:hidden">
+          <summary
+            class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+          >
+            <h2 class="font-medium">40. Gafir</h2>
+
+            <svg
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </summary>
+
+          <p
+            class="mt-4 px-4 leading-relaxed text-gray-700 flex items-center justify-center"
+          >
+            <embed class="pdf" src="sample.pdf" width="800" height="500" />
+          </p>
+        </details>
+
+        <details class="group [&_summary::-webkit-details-marker]:hidden">
+          <summary
+            class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+          >
+            <h2 class="font-medium">41. Fussilet</h2>
+
+            <svg
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </summary>
+
+          <p
+            class="mt-4 px-4 leading-relaxed text-gray-700 flex items-center justify-center"
+          >
+            <embed class="pdf" src="sample.pdf" width="800" height="500" />
+          </p>
+        </details>
+
+        <details class="group [&_summary::-webkit-details-marker]:hidden">
+          <summary
+            class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+          >
+            <h2 class="font-medium">42. Es-Sura</h2>
+
+            <svg
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </summary>
+
+          <p
+            class="mt-4 px-4 leading-relaxed text-gray-700 flex items-center justify-center"
+          >
+            <embed class="pdf" src="sample.pdf" width="800" height="500" />
+          </p>
+        </details>
+
+        <details class="group [&_summary::-webkit-details-marker]:hidden">
+          <summary
+            class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+          >
+            <h2 class="font-medium">43. Ez-Zuhruf</h2>
+
+            <svg
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </summary>
+
+          <p
+            class="mt-4 px-4 leading-relaxed text-gray-700 flex items-center justify-center"
+          >
+            <embed class="pdf" src="sample.pdf" width="800" height="500" />
+          </p>
+        </details>
+
+        <details class="group [&_summary::-webkit-details-marker]:hidden">
+          <summary
+            class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+          >
+            <h2 class="font-medium">44. Ed-Duhan</h2>
+
+            <svg
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </summary>
+
+          <p
+            class="mt-4 px-4 leading-relaxed text-gray-700 flex items-center justify-center"
+          >
+            <embed class="pdf" src="sample.pdf" width="800" height="500" />
+          </p>
+        </details>
+
+        <details class="group [&_summary::-webkit-details-marker]:hidden">
+          <summary
+            class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+          >
+            <h2 class="font-medium">45. El-Dzasija</h2>
+
+            <svg
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </summary>
+
+          <p
+            class="mt-4 px-4 leading-relaxed text-gray-700 flex items-center justify-center"
+          >
+            <embed class="pdf" src="sample.pdf" width="800" height="500" />
+          </p>
+        </details>
+
+        <details class="group [&_summary::-webkit-details-marker]:hidden">
+          <summary
+            class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+          >
+            <h2 class="font-medium">46. El-Ahkaf</h2>
+
+            <svg
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </summary>
+          <p
+            class="mt-4 px-4 leading-relaxed text-gray-700 flex items-center justify-center"
+          >
+            <embed class="pdf" src="sample.pdf" width="800" height="500" />
+          </p>
+        </details>
+
+        <details class="group [&_summary::-webkit-details-marker]:hidden">
+          <summary
+            class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+          >
+            <h2 class="font-medium">47. Muhammed</h2>
+
+            <svg
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </summary>
+
+          <p
+            class="mt-4 px-4 leading-relaxed text-gray-700 flex items-center justify-center"
+          >
+            <embed class="pdf" src="sample.pdf" width="800" height="500" />
+          </p>
+        </details>
+
+        <details class="group [&_summary::-webkit-details-marker]:hidden">
+          <summary
+            class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+          >
+            <h2 class="font-medium">48. El-Feth</h2>
+
+            <svg
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </summary>
+
+          <p
+            class="mt-4 px-4 leading-relaxed text-gray-700 flex items-center justify-center"
+          >
+            <embed class="pdf" src="sample.pdf" width="800" height="500" />
+          </p>
+        </details>
+
+        <details class="group [&_summary::-webkit-details-marker]:hidden">
+          <summary
+            class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+          >
+            <h2 class="font-medium">49. El-Hudzurat</h2>
+
+            <svg
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </summary>
+
+          <p
+            class="mt-4 px-4 leading-relaxed text-gray-700 flex items-center justify-center"
+          >
+            <embed class="pdf" src="sample.pdf" width="800" height="500" />
+          </p>
+        </details>
+
+        <details class="group [&_summary::-webkit-details-marker]:hidden">
+          <summary
+            class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+          >
+            <h2 class="font-medium">50. Kaf</h2>
+
+            <svg
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </summary>
+
+          <p
+            class="mt-4 px-4 leading-relaxed text-gray-700 flex items-center justify-center"
+          >
+            <embed class="pdf" src="sample.pdf" width="800" height="500" />
+          </p>
+        </details>
+
+        <details class="group [&_summary::-webkit-details-marker]:hidden">
+          <summary
+            class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+          >
+            <h2 class="font-medium">51. Ez-Zarijat</h2>
+
+            <svg
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </summary>
+
+          <p
+            class="mt-4 px-4 leading-relaxed text-gray-700 flex items-center justify-center"
+          >
+            <embed class="pdf" src="sample.pdf" width="800" height="500" />
+          </p>
+        </details>
+
+        <details class="group [&_summary::-webkit-details-marker]:hidden">
+          <summary
+            class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+          >
+            <h2 class="font-medium">52. Et-Tur</h2>
+
+            <svg
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </summary>
+
+          <p
+            class="mt-4 px-4 leading-relaxed text-gray-700 flex items-center justify-center"
+          >
+            <embed class="pdf" src="sample.pdf" width="800" height="500" />
+          </p>
+        </details>
+
+        <details class="group [&_summary::-webkit-details-marker]:hidden">
+          <summary
+            class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+          >
+            <h2 class="font-medium">53. En-Nedzm</h2>
+
+            <svg
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </summary>
+
+          <p
+            class="mt-4 px-4 leading-relaxed text-gray-700 flex items-center justify-center"
+          >
+            <embed class="pdf" src="sample.pdf" width="800" height="500" />
+          </p>
+        </details>
+
+        <details class="group [&_summary::-webkit-details-marker]:hidden">
+          <summary
+            class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+          >
+            <h2 class="font-medium">54. El-Kamer</h2>
+
+            <svg
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </summary>
+
+          <p
+            class="mt-4 px-4 leading-relaxed text-gray-700 flex items-center justify-center"
+          >
+            <embed class="pdf" src="sample.pdf" width="800" height="500" />
+          </p>
+        </details>
+
+        <details class="group [&_summary::-webkit-details-marker]:hidden">
+          <summary
+            class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+          >
+            <h2 class="font-medium">55. Er-Rahman</h2>
+
+            <svg
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </summary>
+
+          <p
+            class="mt-4 px-4 leading-relaxed text-gray-700 flex items-center justify-center"
+          >
+            <embed class="pdf" src="sample.pdf" width="800" height="500" />
+          </p>
+        </details>
+
+        <details class="group [&_summary::-webkit-details-marker]:hidden">
+          <summary
+            class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+          >
+            <h2 class="font-medium">56. El-Vakija</h2>
+
+            <svg
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </summary>
+
+          <p
+            class="mt-4 px-4 leading-relaxed text-gray-700 flex items-center justify-center"
+          >
+            <embed class="pdf" src="sample.pdf" width="800" height="500" />
+          </p>
+        </details>
+
+        <details class="group [&_summary::-webkit-details-marker]:hidden">
+          <summary
+            class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+          >
+            <h2 class="font-medium">57. El-Hadid</h2>
+
+            <svg
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </summary>
+
+          <p
+            class="mt-4 px-4 leading-relaxed text-gray-700 flex items-center justify-center"
+          >
+            <embed class="pdf" src="sample.pdf" width="800" height="500" />
+          </p>
+        </details>-->
+
+        <details class="group [&_summary::-webkit-details-marker]:hidden">
+          <summary
+            class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+          >
+            <h2 class="font-medium">58. El-Mudzadele</h2>
+
+            <svg
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </summary>
+
+          <p
+            class="mt-4 px-4 leading-relaxed text-gray-700 flex items-center justify-center"
+          >
+            <embed
+              class="pdf"
+              src="58 sura el mudzadila.pdf"
+              width="800"
+              height="500"
+            />
+          </p>
+        </details>
+
+        <details class="group [&_summary::-webkit-details-marker]:hidden">
+          <summary
+            class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+          >
+            <h2 class="font-medium">59. El-Hasr</h2>
+
+            <svg
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </summary>
+
+          <p
+            class="mt-4 px-4 leading-relaxed text-gray-700 flex items-center justify-center"
+          >
+            <embed
+              class="pdf"
+              src="59 sura el Hashr.pdf"
+              width="800"
+              height="500"
+            />
+          </p>
+        </details>
+
+        <details class="group [&_summary::-webkit-details-marker]:hidden">
+          <summary
+            class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+          >
+            <h2 class="font-medium">60. El-Mumtehine</h2>
+
+            <svg
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </summary>
+
+          <p
+            class="mt-4 px-4 leading-relaxed text-gray-700 flex items-center justify-center"
+          >
+            <embed
+              class="pdf"
+              src="60 el mumtahina.pdf"
+              width="800"
+              height="500"
+            />
+          </p>
+        </details>
+
+        <details class="group [&_summary::-webkit-details-marker]:hidden">
+          <summary
+            class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+          >
+            <h2 class="font-medium">61. Es-Saff</h2>
+
+            <svg
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </summary>
+
+          <p
+            class="mt-4 px-4 leading-relaxed text-gray-700 flex items-center justify-center"
+          >
+            <embed class="pdf" src="61 es saff.pdf" width="800" height="500" />
+          </p>
+        </details>
+
+        <details class="group [&_summary::-webkit-details-marker]:hidden">
+          <summary
+            class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+          >
+            <h2 class="font-medium">62. El-Dzumua</h2>
+
+            <svg
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </summary>
+
+          <p
+            class="mt-4 px-4 leading-relaxed text-gray-700 flex items-center justify-center"
+          >
+            <embed class="pdf" src="62 dzuma.pdf" width="800" height="500" />
+          </p>
+        </details>
+
+        <details class="group [&_summary::-webkit-details-marker]:hidden">
+          <summary
+            class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+          >
+            <h2 class="font-medium">63. El-Munafikun</h2>
+
+            <svg
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </summary>
+
+          <p
+            class="mt-4 px-4 leading-relaxed text-gray-700 flex items-center justify-center"
+          >
+            <embed
+              class="pdf"
+              src="63 el munafikun.pdf"
+              width="800"
+              height="500"
+            />
+          </p>
+        </details>
+
+        <!--<details class="group [&_summary::-webkit-details-marker]:hidden">
+          <summary
+            class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+          >
+            <h2 class="font-medium">64. Et-Tegabun</h2>
+
+            <svg
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </summary>
+
+          <p
+            class="mt-4 px-4 leading-relaxed text-gray-700 flex items-center justify-center"
+          >
+            <embed class="pdf" src="sample.pdf" width="800" height="500" />
+          </p>
+        </details>
+
+        <details class="group [&_summary::-webkit-details-marker]:hidden">
+          <summary
+            class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+          >
+            <h2 class="font-medium">65. Et-Talak</h2>
+
+            <svg
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </summary>
+
+          <p class="mt-4 px-4 leading-relaxed text-gray-700">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic
+            veritatis molestias culpa in, recusandae laboriosam neque aliquid
+            libero nesciunt voluptate dicta quo officiis explicabo consequuntur
+            distinctio corporis earum similique!
+          </p>
+        </details>
+
+        <details class="group [&_summary::-webkit-details-marker]:hidden">
+          <summary
+            class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+          >
+            <h2 class="font-medium">66. Et-Tahrim</h2>
+
+            <svg
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </summary>
+
+          <p
+            class="mt-4 px-4 leading-relaxed text-gray-700 flex items-center justify-center"
+          >
+            <embed class="pdf" src="sample.pdf" width="800" height="500" />
+          </p>
+        </details>
+
+        <details class="group [&_summary::-webkit-details-marker]:hidden">
+          <summary
+            class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+          >
+            <h2 class="font-medium">67. El-Mulk</h2>
+
+            <svg
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </summary>
+
+          <p
+            class="mt-4 px-4 leading-relaxed text-gray-700 flex items-center justify-center"
+          >
+            <embed class="pdf" src="sample.pdf" width="800" height="500" />
+          </p>
+        </details>
+
+        <details class="group [&_summary::-webkit-details-marker]:hidden">
+          <summary
+            class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+          >
+            <h2 class="font-medium">68. El-Kalem</h2>
+
+            <svg
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </summary>
+
+          <p
+            class="mt-4 px-4 leading-relaxed text-gray-700 flex items-center justify-center"
+          >
+            <embed class="pdf" src="sample.pdf" width="800" height="500" />
+          </p>
+        </details>
+
+        <details class="group [&_summary::-webkit-details-marker]:hidden">
+          <summary
+            class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+          >
+            <h2 class="font-medium">69. El-Hakka</h2>
+
+            <svg
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </summary>
+
+          <p
+            class="mt-4 px-4 leading-relaxed text-gray-700 flex items-center justify-center"
+          >
+            <embed class="pdf" src="sample.pdf" width="800" height="500" />
+          </p>
+        </details>
+
+        <details class="group [&_summary::-webkit-details-marker]:hidden">
+          <summary
+            class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+          >
+            <h2 class="font-medium">70. El-Mearidz</h2>
+
+            <svg
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </summary>
+
+          <p
+            class="mt-4 px-4 leading-relaxed text-gray-700 flex items-center justify-center"
+          >
+            <embed class="pdf" src="sample.pdf" width="800" height="500" />
+          </p>
+        </details>
+
+        <details class="group [&_summary::-webkit-details-marker]:hidden">
+          <summary
+            class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+          >
+            <h2 class="font-medium">71. Nuh</h2>
+
+            <svg
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </summary>
+
+          <p
+            class="mt-4 px-4 leading-relaxed text-gray-700 flex items-center justify-center"
+          >
+            <embed class="pdf" src="sample.pdf" width="800" height="500" />
+          </p>
+        </details>
+
+        <details class="group [&_summary::-webkit-details-marker]:hidden">
+          <summary
+            class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+          >
+            <h2 class="font-medium">72. El-Dzinn</h2>
+
+            <svg
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </summary>
+
+          <p
+            class="mt-4 px-4 leading-relaxed text-gray-700 flex items-center justify-center"
+          >
+            <embed class="pdf" src="sample.pdf" width="800" height="500" />
+          </p>
+        </details>
+
+        <details class="group [&_summary::-webkit-details-marker]:hidden">
+          <summary
+            class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+          >
+            <h2 class="font-medium">73. El-Muzemmil</h2>
+
+            <svg
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </summary>
+
+          <p
+            class="mt-4 px-4 leading-relaxed text-gray-700 flex items-center justify-center"
+          >
+            <embed class="pdf" src="sample.pdf" width="800" height="500" />
+          </p>
+        </details>
+
+        <details class="group [&_summary::-webkit-details-marker]:hidden">
+          <summary
+            class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+          >
+            <h2 class="font-medium">74. El-Muddessir</h2>
+
+            <svg
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </summary>
+
+          <p
+            class="mt-4 px-4 leading-relaxed text-gray-700 flex items-center justify-center"
+          >
+            <embed class="pdf" src="sample.pdf" width="800" height="500" />
+          </p>
+        </details>
+
+        <details class="group [&_summary::-webkit-details-marker]:hidden">
+          <summary
+            class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+          >
+            <h2 class="font-medium">75. El-Kijama</h2>
+
+            <svg
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </summary>
+
+          <p
+            class="mt-4 px-4 leading-relaxed text-gray-700 flex items-center justify-center"
+          >
+            <embed class="pdf" src="sample.pdf" width="800" height="500" />
+          </p>
+        </details>
+
+        <details class="group [&_summary::-webkit-details-marker]:hidden">
+          <summary
+            class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+          >
+            <h2 class="font-medium">76. El-Insan</h2>
+
+            <svg
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </summary>
+
+          <p
+            class="mt-4 px-4 leading-relaxed text-gray-700 flex items-center justify-center"
+          >
+            <embed class="pdf" src="sample.pdf" width="800" height="500" />
+          </p>
+        </details>
+
+        <details class="group [&_summary::-webkit-details-marker]:hidden">
+          <summary
+            class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+          >
+            <h2 class="font-medium">77. El-Murselat</h2>
+
+            <svg
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </summary>
+
+          <p
+            class="mt-4 px-4 leading-relaxed text-gray-700 flex items-center justify-center"
+          >
+            <embed class="pdf" src="sample.pdf" width="800" height="500" />
+          </p>
+        </details>
+
+        <details class="group [&_summary::-webkit-details-marker]:hidden">
+          <summary
+            class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+          >
+            <h2 class="font-medium">78. En-Nebe</h2>
+
+            <svg
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </summary>
+
+          <p
+            class="mt-4 px-4 leading-relaxed text-gray-700 flex items-center justify-center"
+          >
+            <embed class="pdf" src="sample.pdf" width="800" height="500" />
+          </p>
+        </details>
+
+        <details class="group [&_summary::-webkit-details-marker]:hidden">
+          <summary
+            class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+          >
+            <h2 class="font-medium">79. En-Naziat</h2>
+
+            <svg
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </summary>
+
+          <p
+            class="mt-4 px-4 leading-relaxed text-gray-700 flex items-center justify-center"
+          >
+            <embed class="pdf" src="sample.pdf" width="800" height="500" />
+          </p>
+        </details>
+
+        <details class="group [&_summary::-webkit-details-marker]:hidden">
+          <summary
+            class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+          >
+            <h2 class="font-medium">80. Abese</h2>
+
+            <svg
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </summary>
+
+          <p
+            class="mt-4 px-4 leading-relaxed text-gray-700 flex items-center justify-center"
+          >
+            <embed class="pdf" src="sample.pdf" width="800" height="500" />
+          </p>
+        </details>
+
+        <details class="group [&_summary::-webkit-details-marker]:hidden">
+          <summary
+            class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+          >
+            <h2 class="font-medium">81. Et-Tekvir</h2>
+
+            <svg
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </summary>
+
+          <p
+            class="mt-4 px-4 leading-relaxed text-gray-700 flex items-center justify-center"
+          >
+            <embed class="pdf" src="sample.pdf" width="800" height="500" />
+          </p>
+        </details>
+
+        <details class="group [&_summary::-webkit-details-marker]:hidden">
+          <summary
+            class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+          >
+            <h2 class="font-medium">82. El-Infitar</h2>
+
+            <svg
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </summary>
+
+          <p
+            class="mt-4 px-4 leading-relaxed text-gray-700 flex items-center justify-center"
+          >
+            <embed class="pdf" src="sample.pdf" width="800" height="500" />
+          </p>
+        </details>
+
+        <details class="group [&_summary::-webkit-details-marker]:hidden">
+          <summary
+            class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+          >
+            <h2 class="font-medium">83. El-Mutaffifin</h2>
+
+            <svg
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </summary>
+
+          <p
+            class="mt-4 px-4 leading-relaxed text-gray-700 flex items-center justify-center"
+          >
+            <embed class="pdf" src="sample.pdf" width="800" height="500" />
+          </p>
+        </details>
+
+        <details class="group [&_summary::-webkit-details-marker]:hidden">
+          <summary
+            class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+          >
+            <h2 class="font-medium">84. El-Insikak</h2>
+
+            <svg
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </summary>
+
+          <p
+            class="mt-4 px-4 leading-relaxed text-gray-700 flex items-center justify-center"
+          >
+            <embed class="pdf" src="sample.pdf" width="800" height="500" />
+          </p>
+        </details>
+
+        <details class="group [&_summary::-webkit-details-marker]:hidden">
+          <summary
+            class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+          >
+            <h2 class="font-medium">85. El-Burudz</h2>
+
+            <svg
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </summary>
+
+          <p
+            class="mt-4 px-4 leading-relaxed text-gray-700 flex items-center justify-center"
+          >
+            <embed class="pdf" src="sample.pdf" width="800" height="500" />
+          </p>
+        </details>
+
+        <details class="group [&_summary::-webkit-details-marker]:hidden">
+          <summary
+            class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+          >
+            <h2 class="font-medium">86. Et-Tarik</h2>
+
+            <svg
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </summary>
+
+          <p
+            class="mt-4 px-4 leading-relaxed text-gray-700 flex items-center justify-center"
+          >
+            <embed class="pdf" src="sample.pdf" width="800" height="500" />
+          </p>
+        </details>
+
+        <details class="group [&_summary::-webkit-details-marker]:hidden">
+          <summary
+            class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+          >
+            <h2 class="font-medium">87. El-E'ala</h2>
+
+            <svg
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </summary>
+
+          <p
+            class="mt-4 px-4 leading-relaxed text-gray-700 flex items-center justify-center"
+          >
+            <embed class="pdf" src="sample.pdf" width="800" height="500" />
+          </p>
+        </details>
+
+        <details class="group [&_summary::-webkit-details-marker]:hidden">
+          <summary
+            class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+          >
+            <h2 class="font-medium">88. Gasija</h2>
+
+            <svg
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </summary>
+
+          <p
+            class="mt-4 px-4 leading-relaxed text-gray-700 flex items-center justify-center"
+          >
+            <embed class="pdf" src="sample.pdf" width="800" height="500" />
+          </p>
+        </details>
+
+        <details class="group [&_summary::-webkit-details-marker]:hidden">
+          <summary
+            class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+          >
+            <h2 class="font-medium">89. El-Fedzr</h2>
+
+            <svg
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </summary>
+
+          <p
+            class="mt-4 px-4 leading-relaxed text-gray-700 flex items-center justify-center"
+          >
+            <embed class="pdf" src="sample.pdf" width="800" height="500" />
+          </p>
+        </details>
+
+        <details class="group [&_summary::-webkit-details-marker]:hidden">
+          <summary
+            class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+          >
+            <h2 class="font-medium">90. El-Beled</h2>
+
+            <svg
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </summary>
+
+          <p
+            class="mt-4 px-4 leading-relaxed text-gray-700 flex items-center justify-center"
+          >
+            <embed class="pdf" src="sample.pdf" width="800" height="500" />
+          </p>
+        </details>
+
+        <details class="group [&_summary::-webkit-details-marker]:hidden">
+          <summary
+            class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+          >
+            <h2 class="font-medium">91. Es-Sems</h2>
+
+            <svg
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </summary>
+
+          <p
+            class="mt-4 px-4 leading-relaxed text-gray-700 flex items-center justify-center"
+          >
+            <embed class="pdf" src="sample.pdf" width="800" height="500" />
+          </p>
+        </details>
+
+        <details class="group [&_summary::-webkit-details-marker]:hidden">
+          <summary
+            class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+          >
+            <h2 class="font-medium">92. El-Lejl</h2>
+
+            <svg
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </summary>
+
+          <p
+            class="mt-4 px-4 leading-relaxed text-gray-700 flex items-center justify-center"
+          >
+            <embed class="pdf" src="sample.pdf" width="800" height="500" />
+          </p>
+        </details>
+
+        <details class="group [&_summary::-webkit-details-marker]:hidden">
+          <summary
+            class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+          >
+            <h2 class="font-medium">93. Ed-Duha</h2>
+
+            <svg
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </summary>
+
+          <p
+            class="mt-4 px-4 leading-relaxed text-gray-700 flex items-center justify-center"
+          >
+            <embed class="pdf" src="sample.pdf" width="800" height="500" />
+          </p>
+        </details>
+
+        <details class="group [&_summary::-webkit-details-marker]:hidden">
+          <summary
+            class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+          >
+            <h2 class="font-medium">94. Insirah</h2>
+
+            <svg
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </summary>
+
+          <p
+            class="mt-4 px-4 leading-relaxed text-gray-700 flex items-center justify-center"
+          >
+            <embed class="pdf" src="sample.pdf" width="800" height="500" />
+          </p>
+        </details>
+
+        <details class="group [&_summary::-webkit-details-marker]:hidden">
+          <summary
+            class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+          >
+            <h2 class="font-medium">95. Et-Tin</h2>
+
+            <svg
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </summary>
+
+          <p
+            class="mt-4 px-4 leading-relaxed text-gray-700 flex items-center justify-center"
+          >
+            <embed class="pdf" src="sample.pdf" width="800" height="500" />
+          </p>
+        </details>
+
+        <details class="group [&_summary::-webkit-details-marker]:hidden">
+          <summary
+            class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+          >
+            <h2 class="font-medium">96. El-Alek</h2>
+
+            <svg
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </summary>
+
+          <p
+            class="mt-4 px-4 leading-relaxed text-gray-700 flex items-center justify-center"
+          >
+            <embed class="pdf" src="sample.pdf" width="800" height="500" />
+          </p>
+        </details>
+
+        <details class="group [&_summary::-webkit-details-marker]:hidden">
+          <summary
+            class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+          >
+            <h2 class="font-medium">97. El-Kadr</h2>
+
+            <svg
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </summary>
+
+          <p
+            class="mt-4 px-4 leading-relaxed text-gray-700 flex items-center justify-center"
+          >
+            <embed class="pdf" src="sample.pdf" width="800" height="500" />
+          </p>
+        </details>
+
+        <details class="group [&_summary::-webkit-details-marker]:hidden">
+          <summary
+            class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+          >
+            <h2 class="font-medium">98. El-Bejjine</h2>
+
+            <svg
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </summary>
+
+          <p
+            class="mt-4 px-4 leading-relaxed text-gray-700 flex items-center justify-center"
+          >
+            <embed class="pdf" src="sample.pdf" width="800" height="500" />
+          </p>
+        </details>
+
+        <details class="group [&_summary::-webkit-details-marker]:hidden">
+          <summary
+            class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+          >
+            <h2 class="font-medium">99. Ez-Zilzal</h2>
+
+            <svg
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </summary>
+
+          <p
+            class="mt-4 px-4 leading-relaxed text-gray-700 flex items-center justify-center"
+          >
+            <embed class="pdf" src="sample.pdf" width="800" height="500" />
+          </p>
+        </details>
+
+        <details class="group [&_summary::-webkit-details-marker]:hidden">
+          <summary
+            class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+          >
+            <h2 class="font-medium">100. El-Adijat</h2>
+
+            <svg
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </summary>
+
+          <p
+            class="mt-4 px-4 leading-relaxed text-gray-700 flex items-center justify-center"
+          >
+            <embed class="pdf" src="sample.pdf" width="800" height="500" />
+          </p>
+        </details>
+
+        <details class="group [&_summary::-webkit-details-marker]:hidden">
+          <summary
+            class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+          >
+            <h2 class="font-medium">101. El-Karija</h2>
+
+            <svg
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </summary>
+
+          <p
+            class="mt-4 px-4 leading-relaxed text-gray-700 flex items-center justify-center"
+          >
+            <embed class="pdf" src="sample.pdf" width="800" height="500" />
+          </p>
+        </details>
+
+        <details class="group [&_summary::-webkit-details-marker]:hidden">
+          <summary
+            class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+          >
+            <h2 class="font-medium">102. Et-Tekasur</h2>
+
+            <svg
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </summary>
+
+          <p
+            class="mt-4 px-4 leading-relaxed text-gray-700 flex items-center justify-center"
+          >
+            <embed class="pdf" src="sample.pdf" width="800" height="500" />
+          </p>
+        </details>
+
+        <details class="group [&_summary::-webkit-details-marker]:hidden">
+          <summary
+            class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+          >
+            <h2 class="font-medium">103. El-Asr</h2>
+
+            <svg
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </summary>
+
+          <p
+            class="mt-4 px-4 leading-relaxed text-gray-700 flex items-center justify-center"
+          >
+            <embed class="pdf" src="sample.pdf" width="800" height="500" />
+          </p>
+        </details>
+
+        <details class="group [&_summary::-webkit-details-marker]:hidden">
+          <summary
+            class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+          >
+            <h2 class="font-medium">104. El-Humezeh</h2>
+
+            <svg
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </summary>
+
+          <p
+            class="mt-4 px-4 leading-relaxed text-gray-700 flex items-center justify-center"
+          >
+            <embed class="pdf" src="sample.pdf" width="800" height="500" />
+          </p>
+        </details>
+
+        <details class="group [&_summary::-webkit-details-marker]:hidden">
+          <summary
+            class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+          >
+            <h2 class="font-medium">105. El-Fil</h2>
+
+            <svg
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </summary>
+
+          <p
+            class="mt-4 px-4 leading-relaxed text-gray-700 flex items-center justify-center"
+          >
+            <embed class="pdf" src="sample.pdf" width="800" height="500" />
+          </p>
+        </details>
+
+        <details class="group [&_summary::-webkit-details-marker]:hidden">
+          <summary
+            class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+          >
+            <h2 class="font-medium">106. Kurejs</h2>
+
+            <svg
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </summary>
+
+          <p
+            class="mt-4 px-4 leading-relaxed text-gray-700 flex items-center justify-center"
+          >
+            <embed class="pdf" src="sample.pdf" width="800" height="500" />
+          </p>
+        </details>
+
+        <details class="group [&_summary::-webkit-details-marker]:hidden">
+          <summary
+            class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+          >
+            <h2 class="font-medium">107. El-Maun</h2>
+
+            <svg
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </summary>
+
+          <p
+            class="mt-4 px-4 leading-relaxed text-gray-700 flex items-center justify-center"
+          >
+            <embed class="pdf" src="sample.pdf" width="800" height="500" />
+          </p>
+        </details>
+
+        <details class="group [&_summary::-webkit-details-marker]:hidden">
+          <summary
+            class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+          >
+            <h2 class="font-medium">108. Kevser</h2>
+
+            <svg
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </summary>
+
+          <p
+            class="mt-4 px-4 leading-relaxed text-gray-700 flex items-center justify-center"
+          >
+            <embed class="pdf" src="sample.pdf" width="800" height="500" />
+          </p>
+        </details>
+
+        <details class="group [&_summary::-webkit-details-marker]:hidden">
+          <summary
+            class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+          >
+            <h2 class="font-medium">109. Kafirun</h2>
+
+            <svg
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </summary>
+
+          <p
+            class="mt-4 px-4 leading-relaxed text-gray-700 flex items-center justify-center"
+          >
+            <embed class="pdf" src="sample.pdf" width="800" height="500" />
+          </p>
+        </details>
+
+        <details class="group [&_summary::-webkit-details-marker]:hidden">
+          <summary
+            class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+          >
+            <h2 class="font-medium">110. En-Nasr</h2>
+
+            <svg
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </summary>
+
+          <p
+            class="mt-4 px-4 leading-relaxed text-gray-700 flex items-center justify-center"
+          >
+            <embed class="pdf" src="sample.pdf" width="800" height="500" />
+          </p>
+        </details>
+
+        <details class="group [&_summary::-webkit-details-marker]:hidden">
+          <summary
+            class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+          >
+            <h2 class="font-medium">111. El-Leheb</h2>
+
+            <svg
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </summary>
+
+          <p
+            class="mt-4 px-4 leading-relaxed text-gray-700 flex items-center justify-center"
+          >
+            <embed class="pdf" src="sample.pdf" width="800" height="500" />
+          </p>
+        </details>
+
+        <details class="group [&_summary::-webkit-details-marker]:hidden">
+          <summary
+            class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+          >
+            <h2 class="font-medium">112. El-Ihlas</h2>
+
+            <svg
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </summary>
+
+          <p
+            class="mt-4 px-4 leading-relaxed text-gray-700 flex items-center justify-center"
+          >
+            <embed class="pdf" src="sample.pdf" width="800" height="500" />
+          </p>
+        </details>
+
+        <details class="group [&_summary::-webkit-details-marker]:hidden">
+          <summary
+            class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+          >
+            <h2 class="font-medium">113. El-Felek</h2>
+
+            <svg
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </summary>
+
+          <p
+            class="mt-4 px-4 leading-relaxed text-gray-700 flex items-center justify-center"
+          >
+            <embed class="pdf" src="sample.pdf" width="800" height="500" />
+          </p>
+        </details> -->
+
+        <!-- <details class="group [&_summary::-webkit-details-marker]:hidden">
+          <summary
+            class="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900"
+          >
+            <h2 class="font-medium">114. En-Nas</h2>
+
+            <svg
+              class="size-5 shrink-0 transition duration-300 group-open:-rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </summary>
+
+          <p
+            class="mt-4 px-4 leading-relaxed text-gray-700 flex items-center justify-center"
+          >
+            <embed class="pdf" src="sample.pdf" width="800" height="500" />
+          </p>
+        </details> -->
+      </div>
+    </section>
+  </body>
+</html>
