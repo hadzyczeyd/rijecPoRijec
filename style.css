@@ -3,7 +3,7 @@ html {
 }
 
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 7px;
 }
 
       /* Track */
@@ -13,13 +13,10 @@ html {
 
       /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: rgb(161 161 170);
+    background: rgb(4 120 87);
     transition: 0.4s all;
-    border-radius: 15px;
-}
-
-      /* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-    background: rgb(113 113 122);
-    transition: 0.4s all;
+    -webkit-transition: 0.4s all;
+    -moz-transition: 0.4s all;
+    -ms-transition: 0.4s all;
+    -o-transition: 0.4s all;
 }
